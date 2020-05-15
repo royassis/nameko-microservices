@@ -11,6 +11,4 @@ COPY config.yml ./
 COPY run.sh ./
 COPY gateway.py ./
 
-RUN chmod +x ./run.sh
-
 CMD ["./run.sh"]
