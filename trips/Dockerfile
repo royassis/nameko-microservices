@@ -13,4 +13,8 @@ COPY trips.py ./
 
 RUN chmod +x ./run.sh
 
+RUN apt-get update
+RUN apt-get install dos2unix
+RUN dos2unix ./run.sh
+
 CMD ["./run.sh"]
